@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript y el DOM 2º parte</title>
+    <style type="text/css">
+        .importante {background-color: red; color: yellowgreen; font-size: 30px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function aplicaClase(){
+            document.getElementById("titulo")
+            .className="importante"
+        }
+
+    </script>
+</head>
+<body>
+<h1 id="titulo">Título inicial</h1>
+<button onclick="aplicaClase()">Aplicar clase</button>
+</body>
+</html>

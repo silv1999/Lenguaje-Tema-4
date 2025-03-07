@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso javascript</title>
+</head>
+<body>
+    <button onclick="acceso()">Pregunta edad</button>
+    <button onclick="suma()">Suma</button>
+    <button onclick="login()">Login</button>
+    <button onclick="calculaDoble()">Doble</button>
+    <button onclick="diceAlineacion()">Alineación</button>
+    <button onclick="sumaHasta()">Suma n primeros números</button>
+
+    <script>
+
+ // acceso(): alert y prompt, let, if
+
+        function acceso(){
+            let edad=prompt("Dime tu edad")
+            if (edad<18) {
+                alert("no puedes entrar");
+            } else {
+                alert("Bienvenidos a mi página")
+            }
+        }
+
+// suma(): vemos el operador + y la función parseInt y Number
+
+        function suma(){
+            let x= prompt("Dime la x");
+            let y =prompt("Dime la y");
+            let suma= parseInt(x) + Number(y);
+            prompt("La suma es " + suma)
+        }
+
+// login(): operador de relación == y op. lógico && (and) también se puede usar ||
+//NO CONFUNDIR EL OPERADOR == (COMPARACIÓN) CON EL = (ASIGNACIIÓN)
+
+        function login(){
+            let usuario = prompt("Introduzca usuario");
+            let password= prompt("Introduzca contraseña");
+            if (usuario == "admin" && password=="1234") {
+            alert ("Puede acceder a la página");
+            } else {
+                alert("Acceso denegado. Credenciales no válidas");
+            }
+        }
+
+// doble(): función con argumento y devolución de valores
+
+        function doble(n) {
+            return 2*n;
+        }
+        function calculaDoble(){
+            let num= prompt("Dime un número");
+            alert("El doble de " + num + " es " + doble(num))
+        }
+
+//diceAlineación(): Arrays
+
+        function diceAlineacion(){
+            let alineacion = ['Bencema', 'Bale', 'Sergio'];
+            let posicion = prompt("Dime una posción");
+            alert("En la posición " + posicion + " juega " + alineacion[posicion])
+        }
+
+//sumaHasta(): Bucle for
+        
+        function sumaHasta(){
+            let num=prompt("Hasta que número quieres sumar");
+            let suma=0;
+            for (let i=1; i<=num; i++){
+            suma= suma +i;
+        }
+        alert("La suma de los " + num + " primeros números es " + suma)
+    }
+
+
+
+         
+
+
+    </script>
+
+    
+</body>
+</html>

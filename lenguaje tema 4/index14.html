@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provincia de envío</title>
+    <style>
+        #provincia {
+            visibility: hidden;
+        }
+        #provincia.mostrar {
+            visibility: visible;
+        }
+    </style>
+    <script type="text/javascript">
+        function muestraProvincia() {
+            var pais = document.getElementById("pais").value
+            var provincia= document.getElementById("provincia");
+            if (pais=="es") {
+                provincia.style.visibility= "visible";
+            } else {
+                provincia.style.visibility= "hidden";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Provincia de envío</h1>
+    <form>
+        <label for="pais">Pais:</label>
+        <select id="pais" name="pais" onchange="muestraProvincia()">
+            <option value="elija">Elija un destino</option>
+            <option value="es">España</option>
+            <option value="fuera">Fuera de España</option>
+        </select>
+    </form>
+<br>
+    <form>
+    <select name="provincia" id="provincia">
+        <option value="cr">Ciudad Real</option>
+        <option value="cu">Cuenca</option>
+    </select>
+    </form>
+    
+</body>
+</html>

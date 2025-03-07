@@ -1,0 +1,26 @@
+{
+    "title": "Recording 23/2/2025 at 17:53:14",
+    "selectorAttribute": "nose",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 606,
+            "height": 1090,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://aulasfp2425.castillalamancha.es/mod/quiz/review.php?attempt=140529&cmid=192952",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://aulasfp2425.castillalamancha.es/mod/quiz/review.php?attempt=140529&cmid=192952",
+                    "title": "1.B.3.Cuestionario HTML: Revisión del intento | aulasfp2425"
+                }
+            ]
+        }
+    ]
+}
